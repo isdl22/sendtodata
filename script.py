@@ -4,17 +4,14 @@ import pymysql
 import os
 import json
 
-# Google Sheets API 범위 설정
-scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-
 # 시크릿에서 서비스 계정 키를 환경 변수로 가져오기
 service_account_info = json.loads(os.getenv('GCP_SERVICE_ACCOUNT_KEY'))
-credentials = Credentials.from_service_account_info(service_account_info, scopes=scope)
+credentials = Credentials.from_service_account_info(service_account_info)
 
 # gspread 클라이언트 생성
 client = gspread.authorize(credentials)
 
-# 시트 열기
+# Google Sheet 열기
 sheet = client.open_by_key("1hmz9ER8b2JqXo6XTLmlB8cSyX-SxNcHsn4mu-tQWr3M").sheet1
 
 # 시트의 모든 데이터 가져오기
