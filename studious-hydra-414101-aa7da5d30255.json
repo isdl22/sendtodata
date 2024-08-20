@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "studious-hydra-414101",
+  "private_key_id": "aa7da5d30255afbbd5a653723b4b17b28ff7f79e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQDcyAKugdua9nZB\nXc2JzeZfm3dIheQzHhfKe4pLNK4W4pTEDORZGfyqTf3wI5FYrL8DoNuhcqLVNAKm\nHe273DllZRsqERSOqk3KCmU/bTSSAjDKr9gB1fTsvL45glz0pGuPO21jlw9HoAds\n3DlwEF7bNxI4QwEfYU7m7NEJ9NVdt5MYGj5OvFcve+4Lv4AtkX5z/tpFKd13y97i\nuQuN+3AYRvUikA8GNRQwDw+YfdG0XKeAX4iOwphJyQmpB5RbCilbfLMxekIfwcHi\naRQJ3OhZgX4Um2y3DYGfVb0uTzO9+IdAb919aZX8i4wbe2l2jcVjmrijV7NasOPy\nKV6Loid3AgMBAAECggEARe7Y4pvhiuFcrfHfhDIDMe+VxhQbJ5H1qT6enJnQNxGI\nW91Vi1+u5+cSc7lgdb0qOCUAzM/6AhyaZjH+ts3YJGT1SMrmPxZ003Wdgoy95S3q\ndJlki5hRH5fdjWvcs+VM6K7DRJN51I89Kt9LFlMpKLj1/XpD5cO18XG7+TJjT26a\n7EP+oNtd/YbBMuGJC+McY5nGvGMHZ0S5thAQTHG6e/RXiP9CvzmgUSqEjSpQycYV\ndbbMzbhpXuKOuQuE+3Yss/Y9ZSfgNhsrzHKdPily/gj0VVveRZe+JjxU9atqmHOl\nKrGuOE/IxLBfTM39sBijbbyw1RkY294A8g5SwgIJkQKBgQD1AV0hRe/zbb9dPPUq\nhP0t98Rmcj1EIcEZueWj/51jkL9oiKozLKQBeQMxmu1HGt6XZLMT1xQAAM/jhQSd\n2cs/BJiVPdp/Z4jYBy5wuZb4k7kFUXv7OZniJ/LaB87k5cC9RvrwnaWOtv8Bo1+H\nSWQehmj9TVFLymZZnO5lgeyE/wKBgQDmsFwGXrcrDjkJMn90oZwd/UGKCCbragsB\nNOOnVLoupMVTlg2Fi2bg7uy4UfRCL1o8Tvi5FGdW5aoeN1IMNZyWVQeXfbCW2tuy\ndBEYYk5udAjwWqTE5eQkrUiUq2YGdRcgTnzeP5kARgpgc62azDeBqoVGKPPSHNDm\nWoR5TIoFiQJ/LPsTHgi5BPghKf0HBcdktAvJAwX2OYv458A5aOKFAsKQYaC1nq+T\nbLHK5FCNP4CvXRwfxIS4J0f+4saJEnHp3qf5W2z/sGRRu1eWLxvjm7+DOHa9TGJG\n3j53V5AXa+7Cc/2UFJjczFbMeoCECVJwDyqeG+MWCdQe9lTZb8lqowKBgFuz16Eg\nnaeb68hgLpJqe+jf9+GrA+2pJd7A645k++32ygpEJ/PiSm84CxnqWjLFKBW5Pt4z\n4jCE8283hoIb/bc07eOmr0AImDUENpd+3LbDoZoKLl2nFV4PFD8lM1V1zk+lY7Xl\niii1rwJQeb6DV71Pz9LoDKSFl/U6HlcpueQhAoGAEVwvrI4cOqXrEzaMWeZ7QMi/\nSsAGiiVHsrzRDb08snoVh/9WKOSMa8U/Xt8nsTxIk002rvaPJcwNrIjepoiXDzKv\nh4zX/c2YLYFiIKMcy3/bGYjjwD60xwILb58keSrTQIulrGkx5kbdpANLcjzZScUm\nzzp4uhtj+/QYUdKQKfM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "googlesheetconn@studious-hydra-414101.iam.gserviceaccount.com",
+  "client_id": "109984446720031342269",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/googlesheetconn%40studious-hydra-414101.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
