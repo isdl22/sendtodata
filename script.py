@@ -4,9 +4,8 @@ import pymysql
 
 # 구글 시트 API 인증
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("studious-hydra-414101-aa7da5d30255.json", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name("service_account.json", scope)
 client = gspread.authorize(creds)
-client
 
 # 시트 열기
 sheet = client.open_by_key("1hmz9ER8b2JqXo6XTLmlB8cSyX-SxNcHsn4mu-tQWr3M").sheet1
