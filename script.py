@@ -2,10 +2,13 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pymysql
 
-# 구글 시트 API 인증
-scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("service_account.json", scope)
-client = gspread.authorize(creds)
+
+# 시크릿에서 서비스 계정 키를 환경 변수로 가져오기
+service_account_info = json.loads(os.getenv('GCP_SERVICE_ACCOUNT_KEY'))
+credentials = Credentials.from_service_account_info(service_account_info)
+
+# gspread 클라이언트 생성
+client = gspread.authorize(credentials)
 
 # 시트 열기
 sheet = client.open_by_key("1hmz9ER8b2JqXo6XTLmlB8cSyX-SxNcHsn4mu-tQWr3M").sheet1
