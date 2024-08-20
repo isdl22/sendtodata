@@ -1,12 +1,15 @@
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+from google.oauth2.service_account import Credentials
 import pymysql
 import os
 import json
 
+# Google Sheets API 범위 설정
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+
 # 시크릿에서 서비스 계정 키를 환경 변수로 가져오기
 service_account_info = json.loads(os.getenv('GCP_SERVICE_ACCOUNT_KEY'))
-credentials = Credentials.from_service_account_info(service_account_info)
+credentials = Credentials.from_service_account_info(service_account_info, scopes=scope)
 
 # gspread 클라이언트 생성
 client = gspread.authorize(credentials)
@@ -48,10 +51,11 @@ try:
 
         # 데이터 삽입
         for row in data:
+            # 특정 키 이름 확인 및 수정 (여기서는 줄바꿈을 제거)
             cursor.execute("""
             INSERT INTO sample_Dataset (`성함`, `직무`, `링크`, `트랙`)
             VALUES (%s, %s, %s, %s);
-            """, (row['성함'], row['직무\n(본인 작성)'], row['링크'], row['트랙']))
+            """, (row['성함'], row['직무'], row['링크'], row['트랙']))
 
     # 커밋
     connection.commit()
