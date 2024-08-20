@@ -2,8 +2,8 @@ name: Run Python Script
 
 on:
   schedule:
-    # 매일 자정(UTC)에 실행
     - cron: "*/5 * * * *"
+  workflow_dispatch:
 
 jobs:
   build:
