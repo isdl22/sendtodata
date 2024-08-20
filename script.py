@@ -1,7 +1,8 @@
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pymysql
-
+import os
+import json
 
 # 시크릿에서 서비스 계정 키를 환경 변수로 가져오기
 service_account_info = json.loads(os.getenv('GCP_SERVICE_ACCOUNT_KEY'))
